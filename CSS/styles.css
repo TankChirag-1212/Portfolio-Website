@@ -195,6 +195,7 @@ nav a:hover{
 .skills-row-msg p{
     text-align: justify;
     margin-left: 10%;
+    margin-right: 12%;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
@@ -406,7 +407,7 @@ nav a:hover{
 .copyright {
     position: absolute;
     bottom: 1%;
-    left: 40%;
+    left: 42%;
     color: #EAF6F6;
     font-size: 1rem;
   }
