@@ -25,7 +25,6 @@ body hr{
     height: 88px;
     margin-left: 7%;
 }
-
 .itemsNav{
     align-content: end;
     font-family: Montserrat,Arial;
@@ -42,7 +41,7 @@ nav{
 
 @media (min-width: 1200px){
     div.container{
-    max-width: 1227px;
+        max-width: 1227px;
     }
 }
 
@@ -81,10 +80,10 @@ nav a:hover{
 
 @keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
     to {
-      width: 308px;
+        width: 308px;
     }
 }
   
@@ -134,6 +133,7 @@ nav a:hover{
     padding-top: 9.4%;
     position: relative;
 }
+
 
 .middle-container{
     padding-top:50px;
@@ -274,7 +274,7 @@ nav a:hover{
       left bottom,
       color-stop(0.05, #66bfbf),
       color-stop(1, #11999e)
-    );
+      );
     background: -moz-linear-gradient(center top, #66bfbf 5%, #11999e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66bfbf', endColorstr='#11999e');
     background-color: #66bfbf;
@@ -311,18 +311,19 @@ nav a:hover{
         left bottom,
         color-stop(0.05, #11999e),
         color-stop(1, #66bfbf)
-    );
-    background: -moz-linear-gradient(center top, #11999e 5%, #66bfbf 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11999e', endColorstr='#66bfbf');
-    background-color: #11999e;
-    text-decoration: none;
-    color: rgb(236, 236, 236);
-}
-
-.butn:active {
-    position: relative;
-    top: 1px;
-}
+        );
+        background: -moz-linear-gradient(center top, #11999e 5%, #66bfbf 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11999e', endColorstr='#66bfbf');
+        background-color: #11999e;
+        text-decoration: none;
+        color: rgb(236, 236, 236);
+    }
+    
+    .butn:active {
+        position: relative;
+        top: 1px;
+    }
+    
 
 .bottom-container{
 	position: fixed;
@@ -423,4 +424,92 @@ nav a:hover{
 .bottom-container .f-link:hover {
     color: #EAF6F6;
     text-decoration: underline;
+}
+
+@media (max-width:400px){
+    .logo{
+        margin-top: 4%;
+        margin-left: 3%;
+    }    
+    .itemsNav{
+        margin-right: -2.9%;
+        margin-top: 2.8%;
+    }    
+    .top-container h1{
+        padding-top: 9.8%;
+    }
+    #top-cloud{
+        margin-top: -5.2%;
+        margin-left: 240px;
+    }
+    @keyframes Right_cloud{
+        from{margin-left: 315px;}
+        to{margin-left: 240px;}
+    } 
+    #bottom-cloud{
+        margin-top: 8.6%;
+        margin-left: -25px;
+    }
+    @keyframes Left_cloud{
+        from{margin-left: -125px;} 
+        to{margin-left: -25px;} 
+    }
+    #land{
+        width: 65%;
+        padding-top: 12.4%;
+    }
+    .profilePic{
+        width: 35%;
+        margin-top: 4%;
+        border-radius: 6%;
+    }
+    .profile p {
+        width: 123%;
+        margin-left: -66px;
+        font-weight: 500;
+        font-size: 19px;
+    }
+    .skills-image {
+        margin: 2% 15px 2px 8%;
+    }
+    .skills-row-msg p {
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .aboutme-img {
+        margin: 0px 8% auto 0px;
+    }
+    .aboutme-msg {
+        font-size: 19px;
+        font-weight: 500;
+        padding-left: 0;
+        margin: auto 8%;
+    }
+    .aboutme-heading {
+        margin: 88px auto 12px 8%;
+    }
+    .contact-message {
+        width: 39%;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .contact-me {
+        margin-bottom: 34%;
+    }
+    .bottom-container {
+        height: 14%;
+    }
+    .bottom-container ul li a {
+        width: 69%;
+        height: 69%;
+    }
+    .bottom-container ul a .material-icons {
+        font-size: 26px;
+        line-height: 59px;
+    }
+    .copyright {
+        left: 38%;
+    }
 }
