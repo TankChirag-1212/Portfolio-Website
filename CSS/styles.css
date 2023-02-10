@@ -47,7 +47,7 @@ nav{
 
 nav a{
     color: #45b29a;
-    font-size: 19px;
+    font-size: 0.9em;
     font-weight:460;
     margin-left: 32px;
     letter-spacing:3px;
@@ -83,7 +83,7 @@ nav a:hover{
         width: 0;
     }
     to {
-        width: 308px;
+        width: 12.4em;
     }
 }
   
@@ -160,7 +160,7 @@ nav a:hover{
     margin-left: 16px;
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.9em;
 }
 .profilePic{
     display: inline-block;
@@ -197,7 +197,7 @@ nav a:hover{
     margin-left: 10%;
     margin-right: 12%;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 0.9em;
     font-weight: 400;
 }
 
@@ -223,7 +223,7 @@ nav a:hover{
 .aboutme-msg{
     text-align: justify;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 0.9em;
     font-weight: 400;
     padding-left:10%;
 }
@@ -249,6 +249,7 @@ nav a:hover{
 }
 
 .highlightmsg{
+    font-size: 2em;
     font-family: Montserrat;
     word-spacing: 5px;
     color: #2dc0bb;
@@ -261,7 +262,7 @@ nav a:hover{
     margin: 40px auto 60px;
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.9em;
 }
 
 .butn {
@@ -324,7 +325,12 @@ nav a:hover{
         top: 1px;
     }
     
-
+.bottom-div{
+    position: relative;
+    text-align: center;
+    width:100%;
+    height: auto;
+}
 .bottom-container{
 	position: fixed;
     bottom: 0;
@@ -426,29 +432,33 @@ nav a:hover{
     text-decoration: underline;
 }
 
-@media (max-width:400px){
+@media (max-width:900px){
     .logo{
-        margin-top: 4%;
-        margin-left: 3%;
+        width: 3.2em;
+        height:auto;
+        margin: 4% auto auto 3%;
     }    
     .itemsNav{
-        margin-right: -2.9%;
-        margin-top: 2.8%;
+        margin: 2.1em auto auto 9em;
     }    
     .top-container h1{
+        font-size: 4em;
         padding-top: 9.8%;
     }
+    .top-container h3{
+        font-size: 1.3em;
+    }
     #top-cloud{
-        margin-top: -5.2%;
-        margin-left: 240px;
+        width: 5em;
+        margin: -5.2% auto auto 10em;
     }
     @keyframes Right_cloud{
-        from{margin-left: 315px;}
-        to{margin-left: 240px;}
+        from{margin-left: 14em;}
+        to{margin-left: 10em;}
     } 
     #bottom-cloud{
-        margin-top: 8.6%;
-        margin-left: -25px;
+        width: 5em;
+        margin: 8.6% auto auto -25px;
     }
     @keyframes Left_cloud{
         from{margin-left: -125px;} 
@@ -459,30 +469,30 @@ nav a:hover{
         padding-top: 12.4%;
     }
     .profilePic{
-        width: 35%;
+        width: 10em;
         margin-top: 4%;
         border-radius: 6%;
     }
     .profile p {
         width: 123%;
-        margin-left: -66px;
+        margin-left: -2.8em;
         font-weight: 500;
-        font-size: 19px;
     }
     .skills-image {
+        width: 11em;
+        height: auto;
         margin: 2% 15px 2px 8%;
     }
     .skills-row-msg p {
         margin-left: 8%;
         margin-right: 8%;
-        font-size: 19px;
         font-weight: 500;
     }
     .aboutme-img {
+        width: 13em;
         margin: 0px 8% auto 0px;
     }
     .aboutme-msg {
-        font-size: 19px;
         font-weight: 500;
         padding-left: 0;
         margin: auto 8%;
@@ -491,15 +501,17 @@ nav a:hover{
         margin: 88px auto 12px 8%;
     }
     .contact-message {
-        width: 39%;
+        width: 19em;
         font-weight: 500;
-        font-size: 20px;
     }
     .contact-me {
-        margin-bottom: 34%;
+        margin-bottom: 18em;
     }
     .bottom-container {
-        height: 14%;
+        height: 10.5em;
+    }
+    .bottom-container ul{
+        top: 19%;
     }
     .bottom-container ul li a {
         width: 69%;
@@ -510,6 +522,12 @@ nav a:hover{
         line-height: 59px;
     }
     .copyright {
-        left: 38%;
+        left: 10em;
+    }
+    .bottom-div{
+        position: relative;
+        text-align: center;
+        width:100%;
+        height: auto;
     }
 }
