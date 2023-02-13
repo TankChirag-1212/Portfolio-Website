@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta viewport="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>My Website</title>
     <link rel="stylesheet" href="CSS/styles.css">
@@ -13,88 +14,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=El+Messiri:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Serif+Georgian:wght@400;500;600;700&family=Parisienne&family=Sacramento&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg" id="navigation">
-        <div class="container">
-            <img class="navbar-brand logo" src="Shouyo_circle.png">
-            <div class="itemsNav">
-            <ul class="navbar-nav" style="flex-direction: row;">
-                <li class="nav-item active">
-                <a class="nav-link" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#My-Skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#CONTACT">Contact</a>
-                </li>
-            </ul>
+    <section id="Home">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg" id="navigation">
+            <div class="container">
+                <a href="#My-Skills"><img class="navbar-brand logo" src="Shouyo_circle.png"></a> 
+                <div class="itemsNav">
+                <ul class="navbar-nav" style="flex-direction: row;">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#My-Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                </div>
             </div>
+        </nav>
+        <div class="top-container">
+            <h1>I'm Chirag.</h1>
+            <img id="top-cloud" src="images/cloud.svg" alt="top-cloud">
+            <h3>a Web Developer.   </h3>
+            <img id="bottom-cloud" src="images/cloud.svg" alt="bottom-cloud">
+            <img id="land" src="images/land.svg" alt="land">
         </div>
-      </nav>
-    <div class="top-container">
-        <h1>I'm Chirag.</h1>
-        <img id="top-cloud" src="images/cloud.svg" alt="top-cloud">
-        <h3>a Web Developer.   </h3>
-        <img id="bottom-cloud" src="images/cloud.svg" alt="bottom-cloud">
-        <img id="land" src="images/land.svg" alt="land">
-    </div>
-    <div class="middle-container">
-            <div id="About" class="profile">
-                <img class="profilePic" src="images/MySelf.jpg" alt="MyPhoto">
-                <h2><b>Hey!</b></h2>
-                <p>I am a fresh and talented web developer who is eager to learn and apply new technologies. I have a strong desire to stay current with the latest developments in my field, and am always looking for opportunities to enhance my skills. With a passion for problem-solving, I am dedicated to finding innovative solutions to real-world challenges. I am a quick learner and have a strong work ethic, making me an asset to any team. Whether working independently or collaborating with others, I consistently produce high-quality work and strive to meet and exceed project expectations</p>
-            </div>
-        
-        <hr>
-        <div id="My-Skills" class="skills">
-            <h2 class="skills-heading">My Skills</h2>
-            <div class="skills-row">
-                <img class="skills-image" src="images/ezgif-4-0f839be0cf.gif" alt="skills">
-                <div class="skills-row-msg">
-                    <h2>What I know.</h2>
-                    <p>
-                    <b>•</b>  Proficient in programming languages such as Python <img class="skills-imgs" src="images/python.png" alt="python"> and Java <img class="skills-imgs" src="images/java.gif" alt="java"> <br>
-                    <b>•</b>  Experienced in web development using HTML<img class="skills-imgs" src="images/html-5.png" alt="html5">, CSS<img class="skills-imgs" src="images/css-3.png" alt="css3">, JavaScript<img class="skills-imgs" src="images/js.png" alt="javascript" style ="width:29px; height:29px;">, and frameworks such as nodeJS<img class="skills-imgs" src="images/node-js.png" alt="nodeJS"> and React<img class="skills-imgs" src="images/atom.png" alt="react"> <br>
-                    <b>•</b>  Familiarity with machine learning algorithms and libraries such as TensorFlow<img class="skills-imgs" src="images/tensorflow.png" alt="Tensorflow"> and Keras<img class="skills-imgs" src="images/keras.jpg" alt="Keras" style ="width:29px; height:29px;"> <br>
-                    <b>•</b>  Strong understanding of database systems like Mongodb<img class="skills-imgs" src="images/mongodb.png" alt="Mongodb"> and SQL<img class="skills-imgs" src="images/mysql.png" alt="MySQL"> <br> 
-                    <b>•</b>  I am also proficient in version control using Git<img class="skills-imgs" src="images/git.png" alt="Git"> and also experience with GitHub<img class="skills-imgs" src="images/GitHub-Mark.png" alt="GitHub">. <br>
-                    
+    </section>
+    <section id="Middle">
+        <div class="middle-container">
+                <div id="About" class="profile">
+                    <img class="profilePic" src="images/MySelf.jpg" alt="MyPhoto">
+                    <h2><b>Hey!</b></h2>
+                    <p>I am a fresh and talented web developer who is eager to learn and apply new technologies. I have a strong desire to stay current with the latest developments in my field, and am always looking for opportunities to enhance my skills. With a passion for problem-solving, I am dedicated to finding innovative solutions to real-world challenges. I am a quick learner and have a strong work ethic, making me an asset to any team. Whether working independently or collaborating with others, I consistently produce high-quality work and strive to meet and exceed project expectations</p>
+                </div>
+            
+            <hr>
+            <div id="My-Skills" class="skills">
+                <h2 class="skills-heading">My Skills</h2>
+                <div class="skills-row">
+                    <img class="skills-image" src="images/ezgif-4-0f839be0cf.gif" alt="skills">
+                    <div class="skills-row-msg">
+                        <h2>What I know.</h2>
+                        <p>
+                        <b>•</b>  Proficient in programming languages such as Python <img class="skills-imgs" src="images/python.png" alt="python"> and Java <img class="skills-imgs" src="images/java.gif" alt="java"> <br>
+                        <b>•</b>  Experienced in web development using HTML<img class="skills-imgs" src="images/html-5.png" alt="html5">, CSS<img class="skills-imgs" src="images/css-3.png" alt="css3">, JavaScript<img class="skills-imgs" src="images/js.png" alt="javascript" style ="width:29px; height:29px;">, and frameworks such as nodeJS<img class="skills-imgs" src="images/node-js.png" alt="nodeJS"> and React<img class="skills-imgs" src="images/atom.png" alt="react"> <br>
+                        <b>•</b>  Familiarity with machine learning algorithms and libraries such as TensorFlow<img class="skills-imgs" src="images/tensorflow.png" alt="Tensorflow"> and Keras<img class="skills-imgs" src="images/keras.jpg" alt="Keras" style ="width:29px; height:29px;"> <br>
+                        <b>•</b>  Strong understanding of database systems like Mongodb<img class="skills-imgs" src="images/mongodb.png" alt="Mongodb"> and SQL<img class="skills-imgs" src="images/mysql.png" alt="MySQL"> <br> 
+                        <b>•</b>  I am also proficient in version control using Git<img class="skills-imgs" src="images/git.png" alt="Git"> and also experience with GitHub<img class="skills-imgs" src="images/GitHub-Mark.png" alt="GitHub">. <br>
+                        
+                        </p>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <h2 class="aboutme-heading">About Me</h2>
+                    <img class="aboutme-img" src="images/aboutme.gif" alt="about me">
+                    <p class="aboutme-msg">
+                        <b>•</b>  I am currently in my final year at MMIT College, pursuing a Bachelor's degree in Computer Science. <br>
+                        <b>•</b>  My academic journey has been focused on developing my technical skills and knowledge, as well as building a strong foundation in computer programming and problem-solving. <br>
+                        <b>•</b>  I am eager to apply what I have learned in a professional setting and to continue growing as a software developer. <br>
                     </p>
                 </div>
             </div>
-            <div class="skills-row">
-                <h2 class="aboutme-heading">About Me</h2>
-                <img class="aboutme-img" src="images/aboutme.gif" alt="about me">
-                <p class="aboutme-msg">
-                    <b>•</b>  I am currently in my final year at MMIT College, pursuing a Bachelor's degree in Computer Science. <br>
-                    <b>•</b>  My academic journey has been focused on developing my technical skills and knowledge, as well as building a strong foundation in computer programming and problem-solving. <br>
-                    <b>•</b>  I am eager to apply what I have learned in a professional setting and to continue growing as a software developer. <br>
-                </p>
-            </div>
         </div>
-        <hr>
-        <div id="CONTACT" class="contact-me">
+    </section>
+    <hr>
+    <section id="contact">
+        <div class="contact-me">
             <h2>Get In Touch</h2>
-            <h3 class="highlightmsg">I’m always available to help and learn together!</h3>
+            <h3 class="boldmsg">I’m always available to help and learn together!</h3>
             <p class="contact-message">Interested in make something great? <br> Let's talk about! Be free to contact-me!</p>
             <a class="butn" href="mailto:tankchirag17@gmail.com">CONTACT ME</a>
         </div>
-        </div>
-    </div>
-    <div class="bottom-div">
-        <footer class="bottom-container">
-            <div>
-                <ul>
-                    <li><a href="https://github.com/TankChirag-1212"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJTLGpbpsHkmFSPdLXnKttwLwvMxQlPXbTVwrPhdBXMpvMSGjrzWvvLxhdsVNFNSvQlqHhg"><i class="material-icons" aria-hidden="true">email</i></a></li>
-                    <li><a href="https://www.linkedin.com/in/chirag-tank-b17025202/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/_tchirag_12/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+    </section>
+    <section id="Footer">
+        <footer>
+            <ul>
+                <li><a class="icons" href="https://github.com/TankChirag-1212"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a class="icons" href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a class="icons" href="https://www.linkedin.com/in/chirag-tank-b17025202/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a class="icons" href="https://www.instagram.com/_tchirag_12/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
             <p class="copyright">© <a href="#" class="f-link">Chirag Tank.</a> All rights reserved.</p>  
         </footer>
-    </div>
+    </section>
 </body>
 </html>
