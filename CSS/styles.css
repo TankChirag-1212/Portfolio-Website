@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    padding:0;
+}
 html body{
     margin:0;
     font-family: Montserrat,Arial, Helvetica, sans-serif;
@@ -21,14 +25,14 @@ body hr{
 }
 
 .logo{
-    width: 82px;
-    height: 88px;
+    width: 95px;
+    height: auto;
     margin-left: 7%;
 }
 .itemsNav{
     align-content: end;
     font-family: Montserrat,Arial;
-    margin-right: 2.1%;
+    margin-right: 0;
 }
 
 nav{
@@ -36,18 +40,18 @@ nav{
 }
 
 #navigation{
-    padding: 1.7rem 1rem 2.5rem;
+    padding: 3rem 1rem 2.5rem;
 }
 
-@media (min-width: 1200px){
-    div.container{
-        max-width: 1227px;
+@media (min-width: 768px){
+    nav .container {
+        max-width: 810px;
     }
 }
 
 nav a{
     color: #45b29a;
-    font-size: 0.9em;
+    font-size: 1.3em;
     font-weight:460;
     margin-left: 32px;
     letter-spacing:3px;
@@ -59,11 +63,11 @@ nav a:hover{
 
 .top-container h1{
     margin: 0;
-    padding-top: 4.8%;
+    padding-top: 7.8%;
     color:#359c8b;
     font-family: Parisienne,cursive;
     font-weight:500;
-    font-size: 5.75em;
+    font-size: 5em;
 }
 
 .top-container h3{
@@ -101,18 +105,19 @@ nav a:hover{
 #top-cloud{
     display: inline-block;
     position:absolute;
-    margin-top: -3.2%;
-    margin-left: 326px;
+    margin-top: -6.2%;
+    margin-left: 12em;
     overflow: hidden;
     animation: Right_cloud 3.8s 1;
 }
 
 @keyframes Right_cloud{
-    from{margin-left: 585px;}
-    to{margin-left: 326px;}
+    from{margin-left: 19em;}
+    to{margin-left: 12em;}
 } 
 .top-container {
     width: 100%;
+    padding-top: 2%;
     background-color:#e4f9f5;
     text-align: center;
 }
@@ -120,13 +125,13 @@ nav a:hover{
 #bottom-cloud{
     position: absolute;
     margin-top: 6.6%;
-    margin-left: -40px;
+    margin-left: 30px;
     animation: Left_cloud 3.8s 1;
 }
 
 @keyframes Left_cloud{
-    from{margin-left: -18%;} 
-    to{margin-left: -40px;} 
+    from{margin-left: -6%;} 
+    to{margin-left: 30px;} 
 }
 #land{
     margin-left: 4%;
@@ -142,7 +147,7 @@ nav a:hover{
 }
 
 .profile{
-    width:60%;
+    width:70%;
     margin:auto;
 }
 
@@ -159,15 +164,15 @@ nav a:hover{
     width: 96%;
     margin-left: 16px;
     font-family: Montserrat;
-    font-weight: 400;
-    font-size: 0.9em;
+    font-weight: 500;
+    font-size: 1em;
 }
 .profilePic{
     display: inline-block;
     align-content: center;
     width:30%;
     height:95%;
-    border-radius: 3%;
+    border-radius: 6%;
 }
 
 .middle-container .skills{
@@ -197,13 +202,13 @@ nav a:hover{
     margin-left: 10%;
     margin-right: 12%;
     font-family: Montserrat;
-    font-size: 0.9em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .skills-heading{
     font-family: Tangerine;
-    font-size: 64px;
+    font-size: 70px;
     color: #185c4d;
     margin-bottom: 60px;
 }
@@ -223,8 +228,8 @@ nav a:hover{
 .aboutme-msg{
     text-align: justify;
     font-family: Montserrat;
-    font-size: 0.9em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 500;
     padding-left:10%;
 }
 
@@ -237,18 +242,18 @@ nav a:hover{
     color: #4b9a86;
 }
 
-.contact-me{
-    margin-bottom: 24%;
+#contact {
+    margin-bottom: 13%;
 }
 
 .contact-me h2{
     font-family: Tangerine;
-    font-size: 64px;
+    font-size: 70px;
     color: #185c4d;
     margin-bottom: 20px;
 }
 
-.highlightmsg{
+.boldmsg{
     font-size: 2em;
     font-family: Montserrat;
     word-spacing: 5px;
@@ -261,8 +266,8 @@ nav a:hover{
     width: 35%;
     margin: 40px auto 60px;
     font-family: Montserrat;
-    font-weight: 400;
-    font-size: 0.9em;
+    font-weight: 500;
+    font-size: 1em;
 }
 
 .butn {
@@ -325,101 +330,83 @@ nav a:hover{
         top: 1px;
     }
     
-.bottom-div{
-    position: relative;
-    text-align: center;
+
+#Footer{
+    margin:0;
+    padding: 0;
+}
+
+footer{
     width:100%;
-    height: auto;
-}
-.bottom-container{
-	position: fixed;
-    bottom: 0;
-    overflow: hidden;
-    z-index: -1;
-	background-color: #233037;
-	width: 100%;
-	height: 30%;
-}
-
-.bottom-container  a{
-    color: #11999e;
-    font-family: "Montserrat", sans-serif;
-    margin: 10px 30px;
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-
-.bottom-container a:hover {
-    color: #e4f9f5;
-}
-
-.bottom-container div{
-    display: inline-block;
-    text-align: center;
-}
-
-.bottom-container ul{
-    margin: 0px;
-    padding: 0px;
+    height: inherit;
+    background:#233037;
     display: flex;
-    position: absolute;
-    top: 25%;
-    transform: translate(-50%);
-
+    align-items: center;
+    justify-content: center;
 }
-.bottom-container ul li{
-    margin: 0 15px;
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
 }
-.bottom-container ul li a{
-    position: relative;
+
+
+footer ul li a{
+    color: #4e4e4e;
+    font-family: "Montserrat", sans-serif;
+    margin: 25px 41px 10px 49px;
+    text-decoration: none;
+    font-size: 1.75rem;
     display: block;
-    width: 65%;
-    height: 65%;
+    position: relative;
+    background-color: #ffffff;
+    height: 50%;
+    width: 50%;
     text-align: center;
-    line-height: 62px;
-    background: #fff;
+    line-height: 50px;
     border-radius: 50%;
-    font-size: 187%;
-    color: #666;
     transition: -5s;
 }
-.bottom-container ul li a:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+
+
+footer ul li a:before{
+    position:absolute;
+    content:'';
+    top:0;
+    left:-2px;
     background: #11999E;
-    transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
-}
-.bottom-container ul li a:hover:before{
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #11999E;
-}
-.bottom-container ul li a:hover{
-    color: #11999E;
-    box-shadow: 0 0 5px #11999E;
-    text-shadow: 0 0 5px #11999E;
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    z-index:-1;
+    transform:scale(0.9);
+    transition: 0.5s;
 }
 
-.bottom-container ul a .material-icons{
-    font-size: 26px;
-    line-height: 2.5;
+footer ul li a:hover:before{
+    transform: scale(1.2);
+    filter:blur(5px);
+    box-shadow: 0 0 15px #11999E;
+}
+
+footer ul li a:hover{
+    color: #11999E;
+    box-shadow: 0 0 35px #11999E;
+    text-shadow: 0 0 10px #11999E;
+    transition: 0.5s;
 }
 
 .copyright {
-    position: absolute;
-    bottom: 1%;
+    margin-bottom: 0%;
+    padding-bottom: 2%;
     left: 42%;
-    color: #EAF6F6;
+    color: #ccd9d9;
     font-size: 1rem;
-  }
+}
 
-.bottom-container .f-link{
+footer .f-link{
     color: #11999E;
     font-family: 'Baloo Chettan 2', cursive;
     margin: 15px auto;
@@ -427,107 +414,112 @@ nav a:hover{
     font-size: 18px;
 }
 
-.bottom-container .f-link:hover {
+footer .f-link:hover {
     color: #EAF6F6;
     text-decoration: underline;
 }
 
-@media (max-width:900px){
+@media (min-width:900px){
+    
+    nav .container {
+        max-width: 1176px;
+    }
     .logo{
-        width: 3.2em;
-        height:auto;
-        margin: 4% auto auto 3%;
-    }    
-    .itemsNav{
-        margin: 2.1em auto auto 9em;
-    }    
-    .top-container h1{
-        font-size: 4em;
-        padding-top: 9.8%;
+        width:4.6em;
+        height: auto;
+        border:solid #11999E 3px;
+        border-radius: 50%;
     }
-    .top-container h3{
-        font-size: 1.3em;
+    .nav-link {
+        padding-left: 1.5rem;
     }
-    #top-cloud{
-        width: 5em;
-        margin: -5.2% auto auto 10em;
+    .top-container h1 {
+        font-size: 6em;
+    }
+    #top-cloud {
+        margin-top: -4.2%;
+        margin-left: 15em;
     }
     @keyframes Right_cloud{
-        from{margin-left: 14em;}
-        to{margin-left: 10em;}
+        from{margin-left: 25em;}
+        to{margin-left: 15em;}
     } 
-    #bottom-cloud{
-        width: 5em;
-        margin: 8.6% auto auto -25px;
+    #bottom-cloud {
+        margin-top: 8.6%;
+        margin-left: -11px;
     }
     @keyframes Left_cloud{
-        from{margin-left: -125px;} 
-        to{margin-left: -25px;} 
+        from{margin-left: -11%;} 
+        to{margin-left: -11px;} 
     }
-    #land{
-        width: 65%;
-        padding-top: 12.4%;
+    .profilePic {
+        margin-top:20px;
+        width: 13em;
+        border-radius: 4%;
     }
-    .profilePic{
-        width: 10em;
-        margin-top: 4%;
-        border-radius: 6%;
+    .profile p{
+        font-size: 1.1em;
+        font-weight: 400;
+        width:90%;
+        margin-left: 5%;
     }
-    .profile p {
-        width: 123%;
-        margin-left: -2.8em;
-        font-weight: 500;
+    .skills-heading {
+        font-size: 70px;
+        font-weight: 600;
     }
     .skills-image {
-        width: 11em;
+        font-size: 1em;
+        width: 14em;
         height: auto;
-        margin: 2% 15px 2px 8%;
     }
     .skills-row-msg p {
-        margin-left: 8%;
-        margin-right: 8%;
-        font-weight: 500;
+        font-size: 1.1em;
+        font-weight: 400;
     }
-    .aboutme-img {
-        width: 13em;
-        margin: 0px 8% auto 0px;
-    }
-    .aboutme-msg {
-        font-weight: 500;
-        padding-left: 0;
-        margin: auto 8%;
+    .skills-row-msg h2 {
+        font-weight: 700;
+        font-size: 38px;
     }
     .aboutme-heading {
-        margin: 88px auto 12px 8%;
+        font-weight: 700;
+        font-size: 38px;
+    }
+    .aboutme-img {
+        width: 16em;
+        margin-top:-2.6em;
+    }
+    .aboutme-msg {
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    .contact-me h2 {
+        font-size: 75px;
+        font-weight: 600;
+        margin-bottom: 0.6em;
     }
     .contact-message {
-        width: 19em;
+        width: 26%;
         font-weight: 500;
+        font-size: 1.1em;
     }
-    .contact-me {
-        margin-bottom: 18em;
+    #contact {
+        margin-bottom: 11em;
     }
-    .bottom-container {
-        height: 10.5em;
+    footer {
+        padding-top:48px;
     }
-    .bottom-container ul{
-        top: 19%;
+    footer ul{
+        margin-bottom: 2.3rem;
     }
-    .bottom-container ul li a {
-        width: 69%;
-        height: 69%;
+    footer ul li a {
+        margin: 25px 40px 10px 46px;
+        font-size: 1.7rem;
+        height: 61%;
+        width: 54%;
+        line-height: 53px;
     }
-    .bottom-container ul a .material-icons {
-        font-size: 26px;
-        line-height: 59px;
-    }
-    .copyright {
-        left: 10em;
-    }
-    .bottom-div{
-        position: relative;
-        text-align: center;
-        width:100%;
-        height: auto;
+    .copyright{
+        position:relative;
+        left:1em;
     }
 }
