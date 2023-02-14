@@ -139,7 +139,6 @@ nav a:hover{
     position: relative;
 }
 
-
 .middle-container{
     padding-top:50px;
     padding-bottom: 0;
@@ -213,9 +212,39 @@ nav a:hover{
     margin-bottom: 60px;
 }
 
-.skills-imgs{
-    width: 2%;
-    height: 3%;
+.skills-row-msg p span img{
+    width: 8em;
+    height: auto;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: -35px;
+    z-index: 1;
+    transition: all -10s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transform: scale(0);
+}
+
+.skills-row-msg p span{
+    color: #17a2b8d6;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.skills-row-msg p:hover span{
+    opacity: 0.5;
+}
+
+.skills-row-msg p span:hover{
+    color: #f39a9a;
+    font-weight: 600;
+    cursor: pointer;
+    opacity:1;
+}
+
+.skills-row-msg p span:hover img{
+    visibility: visible;
+    transform: scale(1);
 }
 
 .aboutme-img{
